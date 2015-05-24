@@ -1,7 +1,6 @@
 window.onload = function(){
 	dataInt = {
 		"data":[
-			{"src":"10.jpg"},
 			{"src":"11.jpg"},
 			{"src":"12.jpg"},
 			{"src":"13.jpg"},
