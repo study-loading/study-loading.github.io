@@ -1,4 +1,7 @@
-﻿#main{
+﻿body{
+	overflow-y:scroll;
+}
+#main{
 	position:relative;
 	margin:0 auto;
 }
@@ -27,3 +30,4 @@
 	margin-left:638px;
 	cursor:pointer;
 	background:url(../images/top.gif);
+}
