@@ -26,4 +26,5 @@
 	bottom:30px;
 	margin-left:638px;
 	cursor:pointer;
-	background:url(../images/top.gif);
+	background:url(./images/top.gif);
+}
