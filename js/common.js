@@ -68,12 +68,12 @@ window.onload = function(){
 			waterFull('main','box');
 		}
 
-		//ÒÆ¶¯¹ö¶¯Ìõ
+		//ç§»åŠ¨æ»šåŠ¨æ¡
 		if(!flag){
 			clearInterval(timer);
 		}
 		flag = false;
-		//»ñÈ¡´°¿Ú¿ÉÊÓÇøÓò¸ß¶È
+		//è·å–çª—å£å¯è§†åŒºåŸŸé«˜åº¦
 		var pageHeight = window.innerHeight;
 		if(typeof pageHeight != "number"){
 			if(document.compatMode == "CSS1Compat"){
@@ -90,10 +90,10 @@ window.onload = function(){
 		}
 	}
 
-	//»Øµ½¶¥²¿
+	//å›åˆ°é¡¶éƒ¨
 	top.onclick = function(){
 			timer = setInterval(function(){
-			//»ñÈ¡¹ö¶¯Ìõ»¬¶¯µÄ¾àÀë
+			//è·å–æ»šåŠ¨æ¡æ»‘åŠ¨çš„è·ç¦»
 			var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 			if(scrollTop == 0){
 				clearInterval(timer);
