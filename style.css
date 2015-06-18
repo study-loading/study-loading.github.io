@@ -1,0 +1,30 @@
+﻿#main{
+	position:relative;
+	margin:0 auto;
+}
+.box{
+	float:left;
+	padding:15px 0 0 15px;
+}
+.pic{
+	padding:10px;
+	border:1px solid #ccc;
+	box-shadow:0 0 5px #ccc;
+	border-radius:5px;
+}
+.pic img{
+	width:280px;
+	height:auto;
+}
+
+#top{
+	position:fixed;
+	display:none;
+	width:36px;
+	height:33px;
+	left:50%;
+	bottom:30px;
+	margin-left:638px;
+	cursor:pointer;
+	background:url(./images/top.gif);
+}
