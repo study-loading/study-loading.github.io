@@ -1,0 +1,51 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+		<style>
+			.demo{
+				height:600px;
+				perspective:1px;
+				overflow: auto;
+				background-color:#ccc;
+			}
+			.box{
+				height:1280px;
+				transform-style: preserve-3d;
+				position:relative;
+			}
+			.girl{
+				position: absolute;
+				left: 50%;
+				transform: translate3D(-50%, 120px, -1px) scale(2);
+			}
+			.flower{
+				display: block;
+				width:250px;
+				height:250px;
+				position:absolute;
+				left:20%;
+				top:30%;
+				background:url("./layer.png") no-repeat 0px -55px;
+			}
+			.smail{
+				display: block;
+				width:100px;
+				height:100px;
+				position:absolute;
+				left:0;
+				top:30%;
+				background:url("./layer.png") no-repeat;
+				transform: translateZ(-2px) scale(3);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="demo">
+			<div class="box">
+				<img class="girl" src="./sandy.jpg" />
+				<i class="flower"></i><i class="smail"></i>
+			</div>
+		</div>
+	</body>
+</html>
