@@ -80,3 +80,17 @@
 .circle .highlight{
 	background-color:#ccc;
 }
+.caption{
+	position:fixed;
+	top:50%;
+	width:1em;
+	font-size:35px;
+	color:#fff;
+	margin-top:-105px;
+}
+.desc-left{
+	left:1%;
+}
+.desc-right{
+	right:1%;
+}
