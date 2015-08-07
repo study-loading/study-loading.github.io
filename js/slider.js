@@ -149,4 +149,4 @@
 	};
 	slider.createCircle();
 	slider.scrollAuto();
-})
+});
