@@ -1,0 +1,77 @@
+﻿body{
+	font-family:"微软雅黑";
+}
+header{
+	text-align:center;
+	font-family:Arial;
+}
+header h1{
+	font-weight:bold;
+	font-size:50px;
+	color:#666;
+}
+header a{
+	display:block;
+	width:120px;
+	background-color:#888;
+	margin:10px auto;
+	border-radius:10px;
+	color:#fff;
+	font-size:20px;
+	padding:5px;
+}
+header p span{
+	font-size:24px;
+	color:#444;
+}
+.container{
+	position:relative;
+	width:675px;
+	border:5px solid #BBADA0;
+	padding:2px;
+	background-color:#ccc;
+	border-radius:5px;
+	overflow:hidden;
+	margin:0 auto;
+}
+.container .cell{
+	width:25px;
+	height:25px;
+	font-size:18px;
+	font-family:"微软雅黑";
+	line-height:25px;
+	text-align:center;
+	float:left;
+	margin:1px;
+	color:#444;
+	background-color:#bbb;
+	border-radius:1px;
+	box-shadow:2px 2px 2px #666;
+}
+.mask{
+	position:absolute;
+	display:none;
+	width:679px;
+	height:409px;
+	background-color:rgba(204,204,204,0.3);
+}
+.mask #over{
+	position:absolute;
+	font-size:0px;
+	font-family:"宋体";
+	font-weight:bold;
+	color:#f00;
+	opacity:0;
+	left:50%;
+	top:50%;
+	transform:translate(-50%, -50%);
+	-o-transform:translate(-50%, -50%);
+	-webkit-transform:translate(-50%, -50%);
+	-moz-transform:translate(-50%, -50%);
+}
+.tip{
+	background:url("../images/flag.png") no-repeat center center;
+}
+.boom{
+	background:url("../images/landmine.png") no-repeat center center;
+}
