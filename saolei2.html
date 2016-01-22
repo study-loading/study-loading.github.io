@@ -1,0 +1,23 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<title>扫雷</title>
+		<link href="css/reset.css" rel="stylesheet" />
+		<link href="css/saolei2.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<a href="javascript:void(0)" id="newgame">New Game</a>
+				<p>炸弹：<span id="last"></span></p>
+			</header>
+			<div class="warp" oncontextmenu="return false" >
+				<div class="mask"><span id="over"></span></div>
+			</div>
+		</div>
+		<audio src="music/宋冬野 - 斑马，斑马.mp3" type="audio/mp3" autoplay loop></audio>
+		<script src="js/require.js" data-main="js/main2"></script>
+	</body>
+</html>
