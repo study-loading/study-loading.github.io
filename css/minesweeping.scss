@@ -1,0 +1,42 @@
+﻿.warp {
+	position: relative;
+	overflow: hidden;
+	@include setSize(0px, 0 auto, #aaa);
+	@include border-radius(5px);
+	@include box-shadow(22px 12px 7px #2a2121);
+}
+.cell {
+	font: 18px/30px "微软雅黑";
+	text-align: center;
+	float: left;
+	color: #444;
+	@include setSize(0px, 2px, #bbb);
+	@include box-shadow(4px 4px 4px #555);
+	@include border-radius(1px);
+	@include transition (background-color 0.3s ease-out);
+}
+.mask {
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(204, 204, 204, 0.3);
+}
+#over {
+	position: absolute;
+	display: block;
+	width: 100%;
+	font: bold 0px "楷体";
+	text-align: center;
+	color: #f00;
+	left: 50%;
+	top: 50%;
+	@include opacity(0);
+	@include translate(-50%, -50%);
+}
+.tip {
+	background: url(../images/flag.png) no-repeat center center;
+}
+.boom {
+	background: url(../images/landmine.png) no-repeat center center;
+}

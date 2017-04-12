@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compation" content="Edge" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<title>自制图片轮播</title>
+		<link href="css/reset.css" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<!--script type="text/javascript">
+			var pageHeight = window.innerHeight;
+			if(typeof pageHeight!= "number"){
+				if(document.compatMode == "CSS1Compat"){
+					pageHeight = document.documentElement.clientHeight;
+				}else{
+					pageHeight = document.body.clientHeight;
+				}
+			}
+			document.body.style.Height = pageHeight + 'px';
+		</script-->
+
+		<div class="warp">
+			<div class="slider">
+				<ul class="slide">
+					<li><img src="./images/slider-1.jpg" /></li>
+					<li><img src="./images/slider-2.jpg" /></li>
+					<li><img src="./images/slider-3.jpg" /></li>
+					<li><img src="./images/slider-4.jpg" /></li>
+					<li><img src="./images/slider-5.jpg" /></li>
+					<li><img src="./images/slider-6.jpg" /></li>
+					<li><img src="./images/slider-7.jpg" /></li>
+				</ul>
+				<span class="prev slide-btn"></span>
+				<span class="next slide-btn"></span>
+			</div>
+			<h1 class="caption desc-left">本人原创</h1>
+			<h1 class="caption desc-right">请勿转载</h1>
+		</div>
+
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/slider.js" ></script>
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="js/PIE.js"></script>
+			<script type="text/javascript">
+			</script>
+		<![endif]-->
+		<script type="text/javascript">
+			$(function() {
+			    if (window.PIE) {
+			        $('.rounded').each(function() {
+			            PIE.attach(this);
+			        });
+			    }
+			});
+		</script>
+	</body>
+</html>
