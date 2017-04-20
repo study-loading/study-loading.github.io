@@ -1,0 +1,29 @@
+body {
+	background-color: #666;
+	margin: 0;
+}
+.container {
+	
+}
+.picture {
+	position: relative;
+	width: 800px;
+	margin: 200px auto 0;
+}
+.picture img {
+	display: block;
+	width: 800px;
+}
+.glass {
+	display: none;
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	left: 0;
+	top: 0;
+	border-radius: 50%;
+	border: 10px solid #333;
+	transform: translate(-50%, -50%);
+	box-shadow: 0px 0px 10px #fff inset;
+	background: url('../images/overwatch-big.jpg') no-repeat 400px 400px;
+}
