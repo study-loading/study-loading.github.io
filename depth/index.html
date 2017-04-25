@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片景深效果</title>
+	<style>
+		body {
+			background-color: #F6F6F6;
+		}
+		.container {
+			perspective: 1px;
+			height: 800px;
+			overflow-x: hidden;
+		}
+		.box {
+			position: relative;
+			transform-style: preserve-3d;
+			height: 1200px;
+		}
+		.girl {
+			position: absolute;
+			width: 800px;
+			left: 50%;
+			top: 500px;
+			transform: translate3d(-50%, 0, -1px) scale(2);
+		}
+		.flower {
+			position: absolute;
+			width: 200px;
+			left: 112%;
+			top: 30%;
+			transform: translateZ(-2px) scale(3);
+		}
+		.flower img {
+			width: 200px;
+		}
+		.flower-copy {
+			position: absolute;
+			width: 200px;
+			left: 18%;
+			top: 50%;
+			transform: rotateY(180deg);
+		}
+		.flower-copy img {
+			width: 200px;
+		}
+		.note {
+			position: absolute;
+			width: 400px;
+			height: 600px;
+			left: -400px;
+			top: 50%;
+			background-color: #666;
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+			transform: translate(0, -50%);
+			transition: left 0.5s ease-out;
+		}
+		.list {
+			
+		}
+		.list-info {
+			list-style: none;
+			padding-left: 0;
+		}
+		.list-info li {
+			border: 1px solid #fff;
+		}
+		.list-info li:after{
+			display: block;
+			content: '';
+			clear: both;
+		}
+		.index {
+			float: left;
+			width: 30px;
+			font-size: 18px;
+			color: #222;
+			text-align: center;
+			line-height: 30px;
+		}
+		.list-info li a {
+			display: table-cell;
+			/*display:inline-block;*/
+			font-size: 15px;
+			text-indent: 2em;
+			text-decoration: none;
+			color: #ccc;
+		}
+		.tip {
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			right: -50px;
+			top: 50%;
+			transform: translate(0, -50%);
+		}
+		.tip span {
+			display: block;
+			width: 50px;
+			height: 50px;
+			font-size: 18px;
+			line-height: 50px;
+			text-align: center;
+			color: #222;
+			background-color: red;
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<img class="girl" src="./girl.jpg" alt="picture" />
+			<div class="flower">
+				<img id="pic" src="./flower.jpg" alt="" />
+			</div>
+			<div class="flower-copy">
+				<img src="./flower.jpg" alt="" />
+			</div>
+		</div>
+	</div>
+	<div id="note" class="note">
+		<div class="list">
+			<ul class="list-info">
+				<li>
+					<span class="index">1</span>
+					<a herf="#">你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好</a>
+				</li>
+				<li><span class="index">2</span><a href="#">你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好</a></li>
+				<li><span class="index">3</span><a href="#">hello wolrd</a></li>
+				<li><span class="index">4</span><a href="#">hello wolrd</a></li>
+				<li><span class="index">5</span><a href="#">hello wolrd</a></li>
+			</ul>
+		</div>
+		<div class="tip">
+			<span id="arrow">note</span>
+		</div>
+	</div>
+	<script>
+		let arrow = document.querySelector('#arrow');
+		let note = document.querySelector('#note');
+		arrow.addEventListener('click', function () {
+			let left = window.getComputedStyle(note).left;
+			if (left === '0px') {
+				note.style.left = '-400px';
+			}
+			if (left === '-400px') {
+				note.style.left = '0px';
+			}
+		}, false);
+		// var girl = document.querySelector('#pic');
+		// var isUp = false;
+		// var canMove = false;
+		// girl.addEventListener('click', function (e) {
+			
+		// }, false);
+
+		// function goUp() {
+		// 	var top = document.body.scrollTop || document.documentElement.scrollTop;
+
+		// }
+	</script>
+</body>
+</html>
