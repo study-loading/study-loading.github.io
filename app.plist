@@ -17,13 +17,13 @@
                 <key>metadata</key>
                 <dict>
                     <key>bundle-identifier</key>
-                    <string>用户名</string>
+                    <string>jiangcheng</string>
                     <key>bundle-version</key>
                     <string>1.0</string>
                     <key>kind</key>
                     <string>software</string>
                     <key>title</key>
-                    <string>标题</string>
+                    <string>ios download</string>
                 </dict>
             </dict>
         </array>
