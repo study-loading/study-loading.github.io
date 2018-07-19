@@ -11,7 +11,7 @@
                         <key>kind</key>
                         <string>software-package</string>
                         <key>url</key>
-                        <string>http://app-global.pgyer.com/0e7a6ffad973b36f8b268fb79911964e.ipa</string>
+                        <string>http://192.168.20.147:2222/static/SSWodi.ipa</string>
                     </dict>
                 </array>
                 <key>metadata</key>
