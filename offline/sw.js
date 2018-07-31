@@ -9,7 +9,7 @@ self.addEventListener('install', function(e) {
         console.log('Opened cache');
         return cache.addAll(urlsToCache);
       })
-    self.skipWaiting()
+//     self.skipWaiting()
   );
 });
 
