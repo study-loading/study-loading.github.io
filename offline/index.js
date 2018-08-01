@@ -11,6 +11,27 @@ if ('serviceWorker' in navigator) {
 	console.log('The browser is not support serviceWorker');
 }
 
+function askPermission() {
+    return new Promise(function (resolve, reject) {
+        var permissionResult = Notification.requestPermission(function (result) {
+            // 旧版本
+            resolve(result);
+        });
+        if (permissionResult) {
+            // 新版本
+            permissionResult.then(resolve, reject);
+        }
+    })
+    .then(function (permissionResult) {
+        if (permissionResult !== 'granted') {
+            // 用户未授权
+			alert('用户未授权')
+        }
+    });
+}
+
+askP
+
 
 
 
