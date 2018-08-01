@@ -1,9 +1,5 @@
-var path = location.pathname;
-if (path[path.length - 1] !== '/') {
-	path += '/';
-}
 if ('serviceWorker' in navigator) {
-	window.addEventListener('load', function () {
+	window.addEventListener('/offline/sw.js', function () {
 		console.log('serviceWorker registering');
 		navigator.serviceWorker.register( + 'sw.js').then(function(registration) {
 			console.log('ServiceWorker registration successful with scope: ', registration.scope);
