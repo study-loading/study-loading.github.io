@@ -3,7 +3,7 @@
     "name": "PWA应用demo",
     "icon": [
         {
-            "src": "./images/icon_x96.png",
+            "url": "./images/icon_x96.png",
             "type": "image/png",
             "sizes": "96x96"
         }
