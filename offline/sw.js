@@ -1,4 +1,4 @@
-var CACHE_NAME = 'my-test-cache-v16';
+var CACHE_NAME = 'my-test-cache-v17';
 var urlsToCache = [];
 
 self.addEventListener('install', function(e) {
