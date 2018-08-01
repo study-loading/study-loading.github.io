@@ -1,5 +1,5 @@
 if ('serviceWorker' in navigator) {
-	window.addEventListener('/offline/sw.js', function () {
+	window.addEventListener('https://study-loading.github.io/offline/sw.js', function () {
 		console.log('serviceWorker registering');
 		navigator.serviceWorker.register( + 'sw.js').then(function(registration) {
 			console.log('ServiceWorker registration successful with scope: ', registration.scope);
