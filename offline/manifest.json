@@ -1,7 +1,5 @@
 {
-    //应用短名称，用于主屏幕显示
     "short_name": "offline",
-    //应用名称，用于安装横幅、启动画面显示
     "name": "PWA应用demo",
     "icon": [
         {
@@ -13,5 +11,5 @@
     "start_url": "./index.html",
     "scope": "./",
     "background_color": "#2196f3",
-    "display": "fullscreen" //"standalone"
+    "display": "fullscreen"
 }
