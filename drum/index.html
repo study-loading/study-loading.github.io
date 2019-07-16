@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">   
+  <title></title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+    html,body {
+      width: 100%;
+      height: 100%;
+    }
+    .container {
+      height: 100%;
+      width: 100%;
+      background-color: #EC407A;
+    }
+    .ripple {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      fill: #AD1457;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .box-left, .box-right {
+      height: 50%;
+    }
+  </style>
+</head>
+<body>
+<!-- SVG Sprite -->
+  <div style="height: 0; width: 0; position: absolute; visibility: hidden;" aria-hidden="true">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+      
+      <!-- Because of Firefox. -->
+      <defs>
+        <radialGradient id="gradient">
+          <stop offset="0" stop-color="#a21453" />
+          <stop offset="0.25" stop-color="#821444" />
+          <stop offset="0.35" stop-color="#bf4579" />
+          <stop offset="0.50" stop-color="#bd698d" />
+          <stop offset="0.60" stop-color="#821444" />
+          <stop offset="0.85" stop-color="#b74878" />
+          <stop offset="1" stop-color="#a21453" />
+        </radialGradient>
+      </defs>
+
+      <symbol id="ripply-circle-wave" viewBox="0 0 100 100">
+        <circle fill="url(#gradient)" cx="1" cy="1" r="1" />
+      </symbol>
+
+      <symbol id="ripply-circle" viewBox="0 0 100 100">
+        <circle cx="1" cy="1" r="1" />
+      </symbol>
+      
+    </svg>
+  </div>
+
+  <div style="height: 0; width: 0; position: absolute; visibility: hidden;" aria-hidden="true">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+      
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="box-left">
+      <svg class="ripple" id="ripple">
+        <use height="100" width="100" xlink:href="#ripply-circle-wave" class="circle-left"></use>
+      </svg>
+    </div>
+    <div class="box-right">
+      <svg class="ripple" id="ripple">
+        <use height="100" width="100" xlink:href="#ripply-circle-wave" class="circle-right"></use>
+      </svg>
+    </div>
+  </div>
+
+  <script src="./js/TweenMax.min.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
